@@ -1,0 +1,20 @@
+<ul class="cont">
+    <li ng-repeat="item in data">
+        <h6>
+            <b>{{item.name}}</b>
+        </h6>
+
+        <div class="jz">
+            <b>{{item.annualRate.split('.')[0]}}</b>.{{item.annualRate.split('.')[1]}}
+            <span>收益率</span>
+        </div>
+        <div class="dw">
+            <span>期限</span><br/>
+            <b>{{item.investmentHorizon}}</b>
+        </div>
+        <div class="gm">
+            <mcanvas percent="{{item.tenderSchedule}}"></mcanvas>
+            <span>已有<small>{{item.investmentNum}}人</small>购买</span>
+        </div>
+    </li>
+</ul>

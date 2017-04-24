@@ -1,0 +1,52 @@
+<chead title="{{title}}"></chead>
+<div class="tab">
+    <ul>
+        <li ng-class="on?'on':''" ng-click="toggleOn()">债券产品</li>
+        <li ng-class="!on?'on':''" ng-click="toggleOn()">优选基金</li>
+    </ul>
+    <span class="span"></span>
+</div>
+<div class="list" ng-include="'views/pro1.html'" ng-show="tmp">
+    <!--<ul class="cont">
+        <li ng-repeat="item in data">
+            <h6>
+                <b>{{item.company}}</b><span> ( 100060 ) 混合型</span>
+            </h6>
+
+            <div class="jz">
+                +<b>22</b>.64%
+                <span>季涨幅</span>
+            </div>
+            <div class="dw">
+                <span>单位净值</span><br/>
+                <b>2.5510</b>
+            </div>
+            <div class="gm">
+                <img src="images/pic.png"/><br/>
+                <span>已有<small>112人</small>购买</span>
+            </div>
+        </li>
+    </ul>-->
+</div>
+<div class="list" ng-include="'views/pro2.html'"  ng-show="!tmp">
+    <!--<ul class="cont">
+        <li ng-repeat="item in data">
+            <h6>
+                <b>{{item.company}}</b><span> ( 100060 ) 混合型</span>
+            </h6>
+
+            <div class="jz">
+                +<b>22</b>.64%
+                <span>季涨幅</span>
+            </div>
+            <div class="dw">
+                <span>单位净值</span><br/>
+                <b>2.5510</b>
+            </div>
+            <div class="gm">
+                <img src="images/pic.png"/><br/>
+                <span>已有<small>112人</small>购买</span>
+            </div>
+        </li>
+    </ul>-->
+</div>

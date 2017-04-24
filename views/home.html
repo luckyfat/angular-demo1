@@ -1,0 +1,38 @@
+<chead title="{{title}}"></chead>
+<div class="home-banner">
+    <swipe></swipe>
+</div>
+<div class="home-cen">
+    <ul>
+        <li>
+            <p>累计成交金额</p>
+            <h2>{{homeje | number:2}}<span>万元</span></h2>
+        </li>
+        <li>
+            <p>为投资人赚取利益</p>
+            <h2>{{homely | number:2}}<span>万元</span></h2>
+        </li>
+    </ul>
+</div>
+<div class="home-list">
+    <ul class="cont">
+        <li ng-repeat="item in data">
+            <h6>
+                <b>{{item.company}}</b><span>{{item.conSn}}</span>
+            </h6>
+
+            <div class="jz">
+                <b>{{item.yearReceipts}}</b>.64%
+                <span>年化收益</span>
+            </div>
+            <div class="dw">
+                <span>期限</span><br/>
+                <sapn><b>{{item.term}}</b>个月</sapn>
+            </div>
+            <div class="gm">
+                <img src="images/pic.png"/><br/>
+                <span><small>112</small>人购买</span>
+            </div>
+        </li>
+    </ul>
+</div>
